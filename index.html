@@ -1,0 +1,828 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIBILL - Construction Management CRM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend+Deca:wght@300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient-glow"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="CIBILL.png" alt="cibill logo" height="56px" />
+        </a>
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i data-lucide="menu" size="28" class="text-white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 py-4 py-lg-0">
+            <a
+              href="#"
+              class="text-white text-decoration-none fw-semibold px-4 py-2 rounded-pill border border-light border-opacity-25 hover-lift"
+              >Login</a
+            >
+            <a href="#trial" class="btn btn-lite btn-primary-elite">
+              <span>Request Demo</span>
+              <i data-lucide="arrow-right" size="20"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="badge-elite">Smart Construction CRM</span>
+
+            <h1 class="hero-title">
+              Unify <br />
+              <span class="text-p1">Your Operations</span>
+              with Clarity.
+            </h1>
+
+            <p class="hero-tagline text-white">
+              Manage costs, site updates, labour, and billing in one powerful
+              dashboard.
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <button class="btn btn-lite btn-primary-elite">
+                Start Free Trial <i data-lucide="arrow-right" size="18"></i>
+              </button>
+
+              <button class="btn btn-lite btn-secondary-elite">
+                Explore Features
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT VISUAL -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-visual">
+              <div class="grid-lines"></div>
+
+              <!-- Dynamic Stats Tiles -->
+
+              <!-- Profit Tracking -->
+              <div class="stat-card stat-card-profit">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="small">Project Profit</span>
+                  <i
+                    data-lucide="trending-up"
+                    size="16"
+                    class="text-success"
+                  ></i>
+                </div>
+                <h3 class="mb-1">+18.4%</h3>
+                <div class="progress stat-progress">
+                  <div class="progress-bar stat-progress-bar"></div>
+                </div>
+              </div>
+
+              <!-- Site Performance -->
+              <div class="stat-card stat-card-performance">
+                <div class="small mb-2">Daily Site Update</div>
+                <div class="d-flex gap-2">
+                  <div class="stat-bar-item stat-bar-1"></div>
+                  <div class="stat-bar-item stat-bar-2"></div>
+                  <div class="stat-bar-item stat-bar-3"></div>
+                  <div class="stat-bar-item stat-bar-4"></div>
+                </div>
+                <div class="mt-3 small fw-semibold">
+                  42 Labour | 120 Cement Bags
+                </div>
+              </div>
+
+              <!-- Central Abstract Element -->
+              <div class="position-absolute top-50 start-50 translate-middle">
+                <i
+                  data-lucide="building-2"
+                  size="200"
+                  class="opacity-10 text-white"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-grid py-5 position-relative">
+      <div class="container py-5">
+        <div class="row g-4 text-center">
+          <!-- Projects -->
+          <div class="col-lg-3 col-md-6 stat-item" data-aos="fade-up">
+            <i
+              data-lucide="building-2"
+              size="48"
+              class="text-white mb-4 icon-shadow-p2"
+            ></i>
+            <span class="stat-number h1">150</span>
+            <div class="h6 fw-normal text-light">Projects Tracked</div>
+          </div>
+
+          <!-- Monitoring -->
+          <div
+            class="col-lg-3 col-md-6 stat-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <i
+              data-lucide="users"
+              size="48"
+              class="text-white mb-4 icon-shadow-p3"
+            ></i>
+            <span class="stat-number h1">24/7</span>
+            <div class="h6 fw-normal text-light">
+              Real-Time Project Monitoring
+            </div>
+          </div>
+
+          <!-- Accuracy -->
+          <div
+            class="col-lg-3 col-md-6 stat-item"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <i
+              data-lucide="award"
+              size="48"
+              class="text-p4 mb-4 icon-shadow-p4"
+            ></i>
+            <span class="stat-number h1">98</span>
+            <div class="h6 fw-normal text-light">Cost Tracking Accuracy</div>
+          </div>
+
+          <!-- Time Saved -->
+          <div
+            class="col-lg-3 col-md-6 stat-item"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <i
+              data-lucide="clock"
+              size="48"
+              class="text-p5 mb-4 icon-shadow-p5"
+            ></i>
+            <span class="stat-number h1">30</span>
+            <div class="h6 fw-normal text-light">Time Saved on Reporting</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section class="py-5 bg-gradient-dark-to-black">
+      <div class="container py-5">
+        <div class="text-center mb-5 pb-5 position-relative">
+          <span class="badge-elite px-4 py-2 fs-6">🏗️ How cibill Works</span>
+          <h2 class="display-4 font-heading">
+            Simplifying the <br /><span class="text-gradient-primary"
+              >Construction Workflow.</span
+            >
+          </h2>
+        </div>
+
+        <div class="row g-4 g-lg-5">
+          <!-- Project & Site Management -->
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="feature-card h-100">
+              <div class="icon-box icon-box-p1">
+                <i data-lucide="layout-dashboard" size="36" class="text-p1"></i>
+              </div>
+              <h4 class="h3 mb-4 font-heading">Project & Site Management</h4>
+              <p class="lead mb-0">
+                Track daily updates, labour, materials, and progress photos in
+                one dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- Expense & Billing -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card h-100">
+              <div class="icon-box icon-box-p2">
+                <i data-lucide="dollar-sign" size="36" class="text-p2"></i>
+              </div>
+              <h4 class="h3 mb-4 font-heading">Expense & Billing Control</h4>
+              <p class="lead mb-0">
+                Monitor expenses, track payments, and generate billing reports.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reports & Insights -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card h-100">
+              <div class="icon-box icon-box-p3">
+                <i data-lucide="shield-check" size="36" class="text-p3"></i>
+              </div>
+              <h4 class="h3 mb-4 font-heading">Reports & Smart Insights</h4>
+              <p class="lead mb-0">
+                Get accurate reports to reduce errors and improve productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile First Section -->
+    <section class="py-5 position-relative overflow-hidden">
+      <div class="container py-5">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- PWA Mockup -->
+          <div
+            class="col-lg-6 order-lg-2"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="phone-mockup">
+              <div class="p-5 pt-6 position-relative h-100 d-flex flex-column">
+                <div class="badge-elite mb-4 px-3 py-2 small badge-elite-sm">
+                  🌐 Offline Active
+                </div>
+                <div class="h4 font-heading mb-4 flex-grow-1">
+                  Site Daily Log
+                </div>
+
+                <!-- Mock content -->
+                <div
+                  class="bg-dark rounded-4 p-4 mb-4 border border-secondary-subtle opacity-75"
+                >
+                  <div class="small fw-semibold mb-2 text-warning">
+                    Concrete Pour #42
+                  </div>
+                  <div class="progress mb-0 mobile-progress">
+                    <div class="progress-bar bg-gradient w-75 progress-bar-gradient-p3-p5"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-dark rounded-4 p-4 border border-secondary-subtle opacity-75"
+                >
+                  <div class="small fw-semibold mb-3 text-info">
+                    🔄 Sync Pending
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="p-2 rounded-circle bg-p3 sync-indicator"></div>
+                    <div>
+                      <div class="small fw-semibold">14 Photos</div>
+                      <div class="small text-light">Queued for upload</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-lg-6 order-lg-1" data-aos="fade-left">
+            <span class="badge-elite px-4 py-2 fs-6">🌐 Web & PWA Ready</span>
+            <h2 class="display-4 mb-5 font-heading">
+              Mobile First. <br /><span class="text-gradient-primary"
+                >Always Connected.</span
+              >
+            </h2>
+            <p class="lead mb-5">
+              cibill is a mobile-first web app and PWA that works offline and on
+              any device. Site supervisors can log updates, track labour, and
+              capture progress anywhere—even without Wi-Fi.
+            </p>
+            <div class="row g-4 mb-5">
+              <div class="col-md-6">
+                <h5 class="font-heading mb-3">⚡ Offline Sync</h5>
+                <p class="small mb-0">
+                  All data caches locally and syncs automatically when back
+                  online.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h5 class="font-heading mb-3">👷 Touch-Friendly UI</h5>
+                <p class="small mb-0">
+                  Designed for gloved hands, high-glare conditions, and quick
+                  site updates.
+                </p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-12">
+                <a
+                  href="#"
+                  class="btn btn-lite btn-primary-elite w-100 w-md-auto"
+                >
+                  <i data-lucide="monitor" size="20"></i>
+                  Open Web App / PWA
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced CRM Screenshots Showcase -->
+    <section class="py-5 screenshot-section bg-gradient-dark-to-black">
+      <div class="container py-5">
+        <div class="text-center mb-5 pb-5">
+          <span class="badge-elite px-4 py-2 fs-6"
+            >💻 Interface Intelligence</span
+          >
+          <h2 class="display-3 font-heading screenshot-heading">
+            Command Center <br /><span class="text-gradient-primary"
+              >Visibility</span
+            >
+          </h2>
+        </div>
+
+        <!-- Top Images Row -->
+        <div class="row align-items-center g-4">
+          <!-- Left large image -->
+          <div class="col-lg-7">
+            <div
+              class="screenshot-container-large"
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+            >
+              <img
+                src="/dashboard_img.png"
+                alt="Main CRM Dashboard"
+                class="screenshot-img"
+              />
+              <div class="screenshot-overlay-text">
+                <h5 class="screenshot-overlay-title">Unified Dashboard</h5>
+                <p class="screenshot-overlay-p">
+                  Monitor all projects, daily logs, and customer billing in one
+                  place.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right smaller image -->
+          <div class="col-lg-5">
+            <div class="screenshot-container-small" data-aos="fade-left">
+              <img
+                src="financial_overview.png"
+                alt="Cost & Margin Widget"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="screenshot-caption">
+              <span class="screenshot-caption-icon">🎯</span>
+              <div>
+                <div>Cost & Margin Insights</div>
+                <p class="screenshot-caption-text">
+                  Estimate project costs and track expenses before approval or
+                  billing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center large full-width project overview -->
+        <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12">
+            <div style="position: relative" class="project-grid-container">
+              <img
+                src="project_overview.png"
+                alt="Full Project Grid"
+                class="project-grid-img"
+              />
+              <div class="project-grid-overlay">
+                <h5 class="screenshot-overlay-title">📊 Project Overview</h5>
+                <p class="screenshot-overlay-p">
+                  Access all active jobs, site logs, and financial insights in
+                  real time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trusted-wrapper">
+      <div class="trusted-by-scroller">
+        <div class="logo-track">
+          <img src="logo1.png" alt="Partner" />
+          <img src="logo2.png" alt="Partner" />
+          <img src="logo3.png" alt="Partner" />
+          <img src="logo4.png" alt="Partner" />
+          <img src="logo5.png" alt="Partner" />
+          <img src="logo6.png" alt="Partner" />
+          <img src="logo1.png" alt="Partner" />
+          <img src="logo2.png" alt="Partner" />
+          <img src="logo3.png" alt="Partner" />
+          <img src="logo4.png" alt="Partner" />
+          <img src="logo5.png" alt="Partner" />
+          <img src="logo6.png" alt="Partner" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section>
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <span class="badge-elite px-4 py-2 fs-6">❓ Clarification</span>
+          <h2 class="display-4 font-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f1"
+                  >
+                    How quickly can I start using the CRM?
+                  </button>
+                </h2>
+                <div
+                  id="f1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You can start within hours. Our cloud setup is instant, and
+                    guided onboarding ensures your team is productive from day
+                    one.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f2"
+                  >
+                    Can I track project costs and margins in real time?
+                  </button>
+                </h2>
+                <div
+                  id="f2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Absolutely. Our dashboard displays live project budgets,
+                    expenses, and profit margins so you can make decisions
+                    instantly.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f3"
+                  >
+                    Is the mobile app offline capable?
+                  </button>
+                </h2>
+                <div
+                  id="f3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes! Our PWA/mobile app is offline-first. Enter logs, update
+                    tasks, and sync data automatically when back online.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f4"
+                  >
+                    Can I integrate it with other tools like QuickBooks or
+                    Procore?
+                  </button>
+                </h2>
+                <div
+                  id="f4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes. Our CRM includes ready-to-use connectors for
+                    QuickBooks, Procore, Autodesk, Sage, and other popular
+                    construction platforms. Custom integrations are also
+                    available.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f5"
+                  >
+                    Is my company data secure?
+                  </button>
+                </h2>
+                <div
+                  id="f5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Security is top priority. All data is encrypted with
+                    AES-256, fully GDPR and SOC2 compliant, with role-based
+                    access and audit trails for every action.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="cta-section py-5 position-relative overflow-hidden">
+      <div class="container py-5">
+        <div class="row align-items-center g-4 g-lg-5 text-center text-lg-start">
+          <div class="col-lg-6" data-aos="zoom-in">
+            <h2 class="display-3 font-heading mb-4 cta-heading">
+              Ready to Transform <br /><span>Your Operations?</span>
+            </h2>
+            <p class="lead mb-0 cta-subheading">
+              Streamline operations, track finances, and boost efficiency. 30
+              days free access, instantly.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div
+              class="bg-dark bg-opacity-75 rounded-5 p-5 border border-white border-opacity-20"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-elite"
+                    placeholder="Full Name *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control form-control-elite"
+                    placeholder="Work Email *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="number"
+                    class="form-control form-control-elite"
+                    placeholder="Phone Number *"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-elite"
+                    placeholder="Company Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select form-control-elite">
+                    <option selected disabled>Company Size</option>
+                    <option>1 - 10</option>
+                    <option>10 - 50</option>
+                    <option>50 - 100</option>
+                    <option>100+</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select
+                    id="businessType"
+                    class="form-select form-control-elite"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select your business type
+                    </option>
+                    <option value="construction">Construction</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="architecture">Architecture / Design</option>
+                    <option value="engineering">
+                      Engineering / Infrastructure
+                    </option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control form-control-elite"
+                    placeholder="Key Challanges Faces! (Optional)"
+                  ></textarea>
+                </div>
+                <div class="col-12 justify-content-center d-flex">
+                  <button class="btn btn-lite btn-primary-elite">
+                    Activate My Free Trial
+                  </button>
+                </div>
+              </div>
+              <p class="small text-center mt-4 mb-0 text-light">
+                Secure • No spam • Cancel anytime
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="position-relative py-5">
+      <div class="container text-center">
+        <div class="justify-content-center py-4">
+          <img src="CIBILL.png" height="50" alt="" />
+        </div>
+        <!-- Copyright -->
+        <p class="medium text-light mb-3">
+          &copy; 2024 Sabari Constructions. All rights reserved.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="social-icon">
+            <i data-lucide="twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i data-lucide="youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+        offset: 100,
+      });
+
+      lucide.createIcons();
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      function createParticles() {
+        const particlesContainer = document.getElementById("particles");
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.animationDelay = Math.random() * 20 + "s";
+          particle.style.animationDuration = Math.random() * 10 + 15 + "s";
+          particle.style.opacity = Math.random() * 0.5 + 0.2;
+          particlesContainer.appendChild(particle);
+        }
+      }
+      createParticles();
+
+      function animateCounters() {
+        const counters = document.querySelectorAll(".stat-number");
+
+        counters.forEach((counter) => {
+          const originalText = counter.textContent.trim();
+
+          if (originalText.includes("/")) return;
+
+          const hasPlus = originalText.includes("+");
+          const hasPercent = originalText.includes("%");
+
+          const target = parseFloat(originalText.replace(/[^0-9.]/g, ""));
+          if (isNaN(target)) return;
+
+          const increment = target / 100;
+          let current = 0;
+
+          function updateCounter() {
+            if (current < target) {
+              current += increment;
+
+              let displayValue =
+                current < 10 ? current.toFixed(1) : Math.ceil(current);
+
+              if (hasPercent) displayValue += "%";
+              if (hasPlus) displayValue += "+";
+
+              counter.textContent = displayValue;
+
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = originalText;
+            }
+          }
+
+          updateCounter();
+        });
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      observer.observe(document.querySelector(".stats-grid"));
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
