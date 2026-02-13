@@ -1,4 +1,4 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,12 +8,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/assets/favicon.png" type="image/webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend+Deca:wght@300;500;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css" />
@@ -25,8 +22,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="CIBILL.png" alt="cibill logo" height="56px" />
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="/assets/cibill_logo.webp" alt="cibill logo" />
         </a>
         <button
           class="navbar-toggler border-0 p-0"
@@ -40,13 +37,15 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 py-4 py-lg-0">
+          <div
+            class="d-flex flex-column flex-lg-row align-items-center gap-4 py-4 py-lg-0"
+          >
             <a
-              href="#"
+              href="https://crm.sabariconstructions.com/"
               class="text-white text-decoration-none fw-semibold px-4 py-2 rounded-pill border border-light border-opacity-25 hover-lift"
               >Login</a
             >
-            <a href="#trial" class="btn btn-lite btn-primary-elite">
+            <a href="" id="requestDemo" class="btn btn-lite btn-primary-elite">
               <span>Request Demo</span>
               <i data-lucide="arrow-right" size="20"></i>
             </a>
@@ -75,13 +74,17 @@
             </p>
 
             <div class="d-flex flex-column flex-sm-row gap-3">
-              <button class="btn btn-lite btn-primary-elite">
-                Start Free Trial <i data-lucide="arrow-right" size="18"></i>
+              <button
+                id="bottomTrialReq"
+                class="btn btn-lite btn-primary-elite"
+              >
+                Start Your 30 Days Free Trial Now!
+                <i data-lucide="arrow-right" size="18"></i>
               </button>
 
-              <button class="btn btn-lite btn-secondary-elite">
+              <!-- <button class="btn btn-lite btn-secondary-elite">
                 Explore Features
-              </button>
+              </button> -->
             </div>
           </div>
 
@@ -110,7 +113,16 @@
 
               <!-- Site Performance -->
               <div class="stat-card stat-card-performance">
-                <div class="small mb-2">Daily Site Update</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="small">Daily Site Updates</span>
+                  <!-- Central Abstract Element -->
+                  <i
+                    data-lucide="building-2"
+                    size="200"
+                    class="opacity-10 text-white"
+                  ></i>
+                </div>
+
                 <div class="d-flex gap-2">
                   <div class="stat-bar-item stat-bar-1"></div>
                   <div class="stat-bar-item stat-bar-2"></div>
@@ -120,15 +132,6 @@
                 <div class="mt-3 small fw-semibold">
                   42 Labour | 120 Cement Bags
                 </div>
-              </div>
-
-              <!-- Central Abstract Element -->
-              <div class="position-absolute top-50 start-50 translate-middle">
-                <i
-                  data-lucide="building-2"
-                  size="200"
-                  class="opacity-10 text-white"
-                ></i>
               </div>
             </div>
           </div>
@@ -147,8 +150,8 @@
               size="48"
               class="text-white mb-4 icon-shadow-p2"
             ></i>
-            <span class="stat-number h1">150</span>
-            <div class="h6 fw-normal text-light">Projects Tracked</div>
+            <span class="stat-number h1">100%</span>
+            <div class="h6 fw-normal text-light">Easy Projects Tracking</div>
           </div>
 
           <!-- Monitoring -->
@@ -179,7 +182,7 @@
               size="48"
               class="text-p4 mb-4 icon-shadow-p4"
             ></i>
-            <span class="stat-number h1">98</span>
+            <span class="stat-number h1">98%</span>
             <div class="h6 fw-normal text-light">Cost Tracking Accuracy</div>
           </div>
 
@@ -194,7 +197,7 @@
               size="48"
               class="text-p5 mb-4 icon-shadow-p5"
             ></i>
-            <span class="stat-number h1">30</span>
+            <span class="stat-number h1">30%</span>
             <div class="h6 fw-normal text-light">Time Saved on Reporting</div>
           </div>
         </div>
@@ -284,7 +287,9 @@
                     Concrete Pour #42
                   </div>
                   <div class="progress mb-0 mobile-progress">
-                    <div class="progress-bar bg-gradient w-75 progress-bar-gradient-p3-p5"></div>
+                    <div
+                      class="progress-bar bg-gradient w-75 progress-bar-gradient-p3-p5"
+                    ></div>
                   </div>
                 </div>
 
@@ -315,7 +320,7 @@
               >
             </h2>
             <p class="lead mb-5">
-              cibill is a mobile-first web app and PWA that works offline and on
+              CiBill is a mobile-first web app and PWA that works offline and on
               any device. Site supervisors can log updates, track labour, and
               capture progress anywhere—even without Wi-Fi.
             </p>
@@ -328,17 +333,17 @@
                 </p>
               </div>
               <div class="col-md-6">
-                <h5 class="font-heading mb-3">👷 Touch-Friendly UI</h5>
+                <h5 class="font-heading mb-3">👷 Instant Updates</h5>
                 <p class="small mb-0">
-                  Designed for gloved hands, high-glare conditions, and quick
-                  site updates.
+                  Make changes on the go—your site or dashboard reflects updates
+                  immediately, saving time and errors.
                 </p>
               </div>
             </div>
             <div class="row g-4">
               <div class="col-12">
                 <a
-                  href="#"
+                  href="https://crm.sabariconstructions.com/"
                   class="btn btn-lite btn-primary-elite w-100 w-md-auto"
                 >
                   <i data-lucide="monitor" size="20"></i>
@@ -352,80 +357,52 @@
     </section>
 
     <!-- Enhanced CRM Screenshots Showcase -->
-    <section class="py-5 screenshot-section bg-gradient-dark-to-black">
-      <div class="container py-5">
-        <div class="text-center mb-5 pb-5">
-          <span class="badge-elite px-4 py-2 fs-6"
-            >💻 Interface Intelligence</span
-          >
-          <h2 class="display-3 font-heading screenshot-heading">
-            Command Center <br /><span class="text-gradient-primary"
-              >Visibility</span
-            >
+    <section class="screenshot-section py-5 bg-gradient-dark-to-black">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center section-header">
+          <span class="badge-elite">💻 Interface Intelligence</span>
+          <h2 class="display-4 screenshot-heading">
+            Command Center <br />
+            <span class="text-gradient-primary">Visibility</span>
           </h2>
         </div>
 
-        <!-- Top Images Row -->
-        <div class="row align-items-center g-4">
-          <!-- Left large image -->
-          <div class="col-lg-7">
-            <div
-              class="screenshot-container-large"
-              data-aos="zoom-in"
-              data-aos-duration="1200"
-            >
-              <img
-                src="/dashboard_img.png"
-                alt="Main CRM Dashboard"
-                class="screenshot-img"
-              />
-              <div class="screenshot-overlay-text">
-                <h5 class="screenshot-overlay-title">Unified Dashboard</h5>
-                <p class="screenshot-overlay-p">
-                  Monitor all projects, daily logs, and customer billing in one
-                  place.
-                </p>
+        <!-- Top Row -->
+        <div class="row g-4 align-items-stretch">
+          <!-- Main Dashboard -->
+          <div class="col-12 col-lg-7">
+            <div class="screenshot-card large">
+              <img src="/assets/dashboard_img.jpg" alt="Main CRM Dashboard" />
+              <div class="overlay">
+                <h5>Unified Dashboard</h5>
+                <p>Monitor projects, logs & billing in one powerful view.</p>
               </div>
             </div>
           </div>
 
-          <!-- Right smaller image -->
-          <div class="col-lg-5">
-            <div class="screenshot-container-small" data-aos="fade-left">
-              <img
-                src="financial_overview.png"
-                alt="Cost & Margin Widget"
-                class="screenshot-img"
-              />
-            </div>
-            <div class="screenshot-caption">
-              <span class="screenshot-caption-icon">🎯</span>
-              <div>
-                <div>Cost & Margin Insights</div>
-                <p class="screenshot-caption-text">
-                  Estimate project costs and track expenses before approval or
-                  billing.
+          <!-- Financial Widget -->
+          <div class="col-12 col-lg-5">
+            <div class="screenshot-card small">
+              <img src="/assets/financial_overview.jpg" alt="Cost & Margin Widget" />
+              <div class="overlay">
+                <h5>Project Intelligence</h5>
+                <p>
+                  Track finances, documents, logs, and progress in one place.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Center large full-width project overview -->
-        <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
+        <!-- Full Width Project Overview -->
+        <div class="row mt-5">
           <div class="col-12">
-            <div style="position: relative" class="project-grid-container">
-              <img
-                src="project_overview.png"
-                alt="Full Project Grid"
-                class="project-grid-img"
-              />
-              <div class="project-grid-overlay">
-                <h5 class="screenshot-overlay-title">📊 Project Overview</h5>
-                <p class="screenshot-overlay-p">
-                  Access all active jobs, site logs, and financial insights in
-                  real time.
-                </p>
+            <div class="screenshot-card full">
+              <img src="/assets/project_overview.jpg" alt="Full Project Grid" />
+              <div class="overlay">
+                <h5>Project Overview</h5>
+                <p>Access jobs, logs & financial insights in real time.</p>
               </div>
             </div>
           </div>
@@ -544,37 +521,6 @@
                 </div>
               </div>
 
-              <!-- FAQ 4 -->
-              <div
-                class="accordion-item"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#f4"
-                  >
-                    Can I integrate it with other tools like QuickBooks or
-                    Procore?
-                  </button>
-                </h2>
-                <div
-                  id="f4"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div class="accordion-body">
-                    Yes. Our CRM includes ready-to-use connectors for
-                    QuickBooks, Procore, Autodesk, Sage, and other popular
-                    construction platforms. Custom integrations are also
-                    available.
-                  </div>
-                </div>
-              </div>
-
               <!-- FAQ 5 -->
               <div
                 class="accordion-item"
@@ -612,88 +558,78 @@
     <!-- Enhanced CTA Section -->
     <section class="cta-section py-5 position-relative overflow-hidden">
       <div class="container py-5">
-        <div class="row align-items-center g-4 g-lg-5 text-center text-lg-start">
+        <div
+          class="row align-items-center g-4 g-lg-5 text-center text-lg-start"
+        >
           <div class="col-lg-6" data-aos="zoom-in">
             <h2 class="display-3 font-heading mb-4 cta-heading">
-              Ready to Transform <br /><span>Your Operations?</span>
+              Supercharge <br /><span>Your Operations Today!</span>
             </h2>
             <p class="lead mb-0 cta-subheading">
-              Streamline operations, track finances, and boost efficiency. 30
-              days free access, instantly.
+              Take control, streamline every process, and skyrocket your
+              efficiency. Start now with 30 days of FREE access!
             </p>
           </div>
+
           <div class="col-lg-6" data-aos="fade-left">
             <div
               class="bg-dark bg-opacity-75 rounded-5 p-5 border border-white border-opacity-20"
             >
-              <div class="row">
+              <form id="trialForm" class="row">
                 <div class="col-md-6">
                   <input
                     type="text"
+                    name="fullName"
                     class="form-control form-control-elite"
                     placeholder="Full Name *"
+                    required
                   />
                 </div>
+
                 <div class="col-md-6">
                   <input
                     type="email"
+                    name="email"
                     class="form-control form-control-elite"
                     placeholder="Work Email *"
+                    required
                   />
                 </div>
+
                 <div class="col-md-6">
                   <input
                     type="number"
+                    name="phone"
                     class="form-control form-control-elite"
                     placeholder="Phone Number *"
+                    required
                   />
                 </div>
+
                 <div class="col-md-6">
                   <input
                     type="text"
+                    name="company"
                     class="form-control form-control-elite"
                     placeholder="Company Name"
                   />
                 </div>
-                <div class="col-md-6">
-                  <select class="form-select form-control-elite">
-                    <option selected disabled>Company Size</option>
-                    <option>1 - 10</option>
-                    <option>10 - 50</option>
-                    <option>50 - 100</option>
-                    <option>100+</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <select
-                    id="businessType"
-                    class="form-select form-control-elite"
-                    required
-                  >
-                    <option value="" selected disabled>
-                      Select your business type
-                    </option>
-                    <option value="construction">Construction</option>
-                    <option value="real-estate">Real Estate</option>
-                    <option value="architecture">Architecture / Design</option>
-                    <option value="engineering">
-                      Engineering / Infrastructure
-                    </option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+
                 <div class="col-12">
                   <textarea
+                    name="challenges"
                     class="form-control form-control-elite"
-                    placeholder="Key Challanges Faces! (Optional)"
+                    placeholder="Key Challenges Faced! (Optional)"
                   ></textarea>
                 </div>
+
                 <div class="col-12 justify-content-center d-flex">
-                  <button class="btn btn-lite btn-primary-elite">
+                  <button type="submit" class="btn btn-lite btn-primary-elite">
                     Activate My Free Trial
                   </button>
                 </div>
-              </div>
+              </form>
+
               <p class="small text-center mt-4 mb-0 text-light">
                 Secure • No spam • Cancel anytime
               </p>
@@ -707,23 +643,38 @@
     <footer class="position-relative py-5">
       <div class="container text-center">
         <div class="justify-content-center py-4">
-          <img src="CIBILL.png" height="50" alt="" />
+          <img src="/assets/CIBILL.png" height="50" alt="" />
         </div>
         <!-- Copyright -->
         <p class="medium text-light mb-3">
-          &copy; 2024 Sabari Constructions. All rights reserved.
+          &copy; 2026 Sabari Constructions. All rights reserved.
         </p>
 
         <!-- Social Icons -->
         <div class="d-flex gap-3 justify-content-center">
-          <a href="#" class="social-icon">
-            <i data-lucide="twitter"></i>
+          <a
+            href="https://www.instagram.com/p/DI_q-PgJ3_d/"
+            class="social-icon"
+          >
+            <i data-lucide="instagram"></i>
           </a>
-          <a href="#" class="social-icon">
+          <a
+            href="https://www.linkedin.com/posts/rtn-er-b-sabarinathan-me-amie-c-engg-funder-of-s2b-innovation-and-technologies-172648341_sabari-construction-20-rtnerb-sabarinathan-activity-7274670465896353792-0nVL"
+            class="social-icon"
+          >
             <i data-lucide="linkedin"></i>
           </a>
-          <a href="#" class="social-icon">
+          <a
+            href="https://www.youtube.com/@SabariConstruction"
+            class="social-icon"
+          >
             <i data-lucide="youtube"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/sabariconstructionsmdu/"
+            class="social-icon"
+          >
+            <i data-lucide="facebook"></i>
           </a>
         </div>
       </div>
@@ -732,6 +683,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
       AOS.init({
         duration: 1000,
@@ -822,6 +775,74 @@
             target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const button = document.getElementById("requestDemo");
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const phoneNumber = "919751530344";
+          const message = encodeURIComponent(
+            `Hi there! I’m interested in learning more about your CRM construction management software and would like to request a demo.`,
+          );
+          const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+          window.open(whatsappURL, "_blank");
+        });
+      });
+
+      document
+        .getElementById("bottomTrialReq")
+        .addEventListener("click", function () {
+          document.getElementById("trialForm").scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw_iOnlJW1xTYw89DLwwqwMcw7BGEG8X19pnN7oUySxAjMWw4-JPw9FQG3szwcS96u3/exec";
+      const form = document.getElementById("trialForm");
+      const submitBtn = form.querySelector("button[type='submit']");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status"></span>Submitting...`;
+
+        fetch(scriptURL, {
+          method: "POST",
+          mode: "no-cors",
+          body: new FormData(form),
+        })
+          .then(() => {
+            Swal.fire({
+              title: "🎉 Registration Successful!",
+              text: "Our team will contact you shortly.",
+              icon: "success",
+              confirmButtonColor: "#0d6efd",
+              confirmButtonText: "OK",
+            });
+
+            form.reset();
+          })
+          .catch(() => {
+            Swal.fire({
+              title: "Oops!",
+              text: "Something went wrong. Please try again.",
+              icon: "error",
+              confirmButtonColor: "#dc3545",
+            });
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          });
       });
     </script>
   </body>
